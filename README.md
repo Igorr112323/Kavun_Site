@@ -41,7 +41,26 @@ PDF-каталоги, формы заявок и админ-панель, из �
 
 ### Windows
 
-Самый простой путь — распаковать архив и запустить **`start-windows.cmd`** (двойной клик).
+**Скачивание.** Если файл из чата не появился в `Downloads`, скачайте архив напрямую из GitHub —
+это надёжнее и не зависит от браузера:
+
+```powershell
+cd $HOME\Downloads
+Invoke-WebRequest -Uri "https://codeload.github.com/Igorr112323/Kavun_Site/zip/refs/heads/arena/037ca4fa-kavun-site" -OutFile "vip-service.zip"
+Expand-Archive -Path .\vip-service.zip -DestinationPath . -Force
+Rename-Item -Path .\Kavun_Site-arena-037ca4fa-kavun-site -NewName vip-service
+cd .\vip-service
+```
+
+Или через git (если он установлен):
+
+```powershell
+cd $HOME
+git clone -b arena/037ca4fa-kavun-site https://github.com/Igorr112323/Kavun_Site.git vip-service
+cd .\vip-service
+```
+
+**Запуск.** Самый простой путь — запустить **`start-windows.cmd`** (двойной клик).
 Скрипт сам проверит Node, создаст `.env`, поставит зависимости, соберёт сайт,
 запустит сервер в отдельном окне и откроет браузер. Повторный запуск — быстрее,
 сборка пропускается.
