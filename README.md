@@ -36,8 +36,46 @@ PDF-каталоги, формы заявок и админ-панель, из �
 
 ## Быстрый старт
 
+Нужен **Node.js 20.9+** (проверено на 22.22): https://nodejs.org — берите LTS.
+Дальше выберите свою систему.
+
+### Windows
+
+Самый простой путь — распаковать архив и запустить **`start-windows.cmd`** (двойной клик).
+Скрипт сам проверит Node, создаст `.env`, поставит зависимости, соберёт сайт,
+запустит сервер в отдельном окне и откроет браузер. Повторный запуск — быстрее,
+сборка пропускается.
+
+Вручную, в PowerShell (не в cmd):
+
+```powershell
+# распаковать архив (в PowerShell нет команды unzip)
+Expand-Archive -Path .\vip-service.zip -DestinationPath .
+
+cd vip-service
+Copy-Item .env.example .env
+npm ci
+npm run build
+npm start
+```
+
+Порт занят — `npm start -- -p 3001`.
+
+Если PowerShell пишет «выполнение сценариев отключено» (это про `npm.ps1`):
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+Тогда же помогает запуск через `npm.cmd ci` вместо `npm ci`.
+
+Если `npm ci` падает на `better-sqlite3` с ошибкой сборки — поставьте Node.js LTS 22,
+либо «Visual Studio Build Tools» с компонентом «Desktop development with C++».
+
+### macOS / Linux
+
 ```bash
-# Node.js 20.9+ (проверено на 22.22). Для better-sqlite3 нужны python3, make, g++
+# для better-sqlite3 нужны python3, make, g++
 npm ci
 
 cp .env.example .env
@@ -695,6 +733,7 @@ Cron: бэкап раз в сутки, хранение 14 дней, отдел�
 │   └── uploads/             загрузки из админки (в git не попадают)
 ├── scripts/                 генерация PDF, обложек, шрифты для PDF
 ├── data/                    SQLite (в git не попадает)
+├── start-windows.cmd        запуск в один клик для Windows
 ├── next.config.ts           заголовки безопасности, изображения
 └── package.json
 ```
