@@ -44,7 +44,7 @@ body.admin-body {
 }
 .admin-nav__group {
   font-family: var(--font-mono);
-  font-size: 8.5px;
+  font-size: 10.5px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: rgba(236, 233, 225, 0.3);
@@ -73,7 +73,7 @@ body.admin-body {
 }
 .admin-nav a b {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 10.5px;
   font-weight: 500;
   color: var(--accent);
   background: rgba(255, 77, 18, 0.12);
@@ -100,14 +100,14 @@ body.admin-body {
 }
 .admin-user span {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 10.5px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: rgba(236, 233, 225, 0.35);
 }
 .admin-signout {
   font-family: var(--font-mono);
-  font-size: 9.5px;
+  font-size: 10.5px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(236, 233, 225, 0.55);
@@ -161,7 +161,7 @@ body.admin-body {
 .admin-head .btn,
 .admin-toolbar .btn {
   min-height: 40px;
-  font-size: 10px;
+  font-size: 10.5px;
   padding: 10px 14px;
 }
 
@@ -181,7 +181,7 @@ body.admin-body {
 }
 .admin-stat span {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 10.5px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
@@ -276,7 +276,7 @@ body.admin-body {
 }
 .admin-table th {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 10.5px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
@@ -305,7 +305,7 @@ body.admin-body {
 }
 .admin-table__title span {
   font-family: var(--font-mono);
-  font-size: 9.5px;
+  font-size: 10.5px;
   color: var(--muted);
   letter-spacing: 0.04em;
 }
@@ -318,7 +318,7 @@ body.admin-body {
 }
 .admin-link {
   font-family: var(--font-mono);
-  font-size: 9.5px;
+  font-size: 10.5px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
@@ -340,7 +340,7 @@ body.admin-body {
   gap: 5px;
   padding: 3px 8px;
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 10.5px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border: 1px solid var(--line);
@@ -541,7 +541,7 @@ body.admin-body {
   display: grid;
   gap: 6px;
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 10.5px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(236, 233, 225, 0.4);
@@ -573,7 +573,7 @@ body.admin-body {
   border: 1px dashed var(--line-strong);
   padding: 12px;
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 11.5px;
   line-height: 1.6;
   color: var(--muted);
   word-break: break-all;
@@ -644,7 +644,7 @@ body.admin-body {
 .image-tile__bar button {
   flex: 1;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 10.5px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 4px 2px;
@@ -666,7 +666,7 @@ body.admin-body {
   background: var(--accent);
   color: #fff;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 10.5px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 2px 5px;
@@ -724,13 +724,13 @@ body.admin-body {
 }
 .logo-choice b {
   font-family: var(--font-mono);
-  font-size: 9.5px;
+  font-size: 10.5px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
 }
 .logo-choice .label {
-  font-size: 9px;
+  font-size: 10.5px;
 }
 .logo-dark-preview {
   background: var(--ink);
@@ -841,7 +841,7 @@ body.admin-body {
     display: none;
   }
   .admin-user b {
-    font-size: 11px;
+    font-size: 11.5px;
     max-width: 120px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -849,7 +849,7 @@ body.admin-body {
   }
   .admin-signout {
     padding: 7px 9px;
-    font-size: 9px;
+    font-size: 10.5px;
   }
   .admin-nav {
     order: 3;

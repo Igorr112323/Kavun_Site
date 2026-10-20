@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   description:
     'Продажа, ремонт и перевозка промышленного оборудования для алюминиевых и пластиковых конструкций. Склад в Краснодаре, выезд по ЮФО.',
   applicationName: 'Vip-service',
+  manifest: '/manifest.webmanifest',
+  appleWebApp: {
+    capable: true,
+    title: 'Vip-service',
+    statusBarStyle: 'black-translucent',
+  },
   authors: [{ name: 'Vip-service' }],
   creator: 'Vip-service',
   formatDetection: { telephone: false },

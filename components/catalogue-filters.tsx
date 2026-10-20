@@ -42,17 +42,19 @@ export function CatalogueFilters({ categories, manufacturers, total, allTotal, c
             type="button"
             className="chip"
             aria-pressed={!category}
+            style={{ '--i': 0 } as React.CSSProperties}
             onClick={() => update('category', '')}
           >
             Все
             <small>{allTotal ?? total}</small>
           </button>
-          {categories.map((c) => (
+          {categories.map((c, i) => (
             <button
               key={c.slug}
               type="button"
               className="chip"
               aria-pressed={category === c.slug}
+              style={{ '--i': i + 1 } as React.CSSProperties}
               onClick={() => update('category', c.slug)}
             >
               {c.short_title || c.title}
