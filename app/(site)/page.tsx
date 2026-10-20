@@ -39,7 +39,9 @@ export default function HomePage() {
   const posts = getPosts(3)
   const catalogs = getCatalogs().slice(0, 3)
   const today = formatDate(new Date())
-  const checkMonth = new Intl.DateTimeFormat('ru-RU', { month: 'long', year: 'numeric' }).format(new Date())
+  const checkMonth = new Intl.DateTimeFormat('ru-RU', { month: 'long', year: 'numeric' })
+    .format(new Date())
+    .replace(' г.', '')
 
   return (
     <>
